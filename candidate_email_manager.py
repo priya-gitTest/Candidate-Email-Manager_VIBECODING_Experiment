@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Candidate Email Manager
 A Python application to manage sequential email campaigns for candidates
@@ -7,8 +8,8 @@ Uses DuckDB for data persistence and SMTP for email delivery
 import duckdb
 import smtplib
 import os
-from email.mime.text import MimeText
-from email.mime.multipart import MimeMultipart
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 import json
