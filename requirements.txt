@@ -1,2 +1,6 @@
-duckdb>=0.9.0
-python-dotenv>=1.0.0
+fastapi
+uvicorn
+duckdb
+jinja2
+python-multipart  # for form uploads
+email-validator

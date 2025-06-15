@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Template</title></head>
+<body>
+  <h1>Edit Email Template - Stage {{ stage }}</h1>
+  <form action="/template/{{ stage }}" method="post">
+    <textarea name="content" rows="20" cols="80">{{ content }}</textarea><br>
+    <button type="submit">Save</button>
+  </form>
+  <a href="/">← Back</a>
+</body>
+</html>

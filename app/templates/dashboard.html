@@ -1,0 +1,22 @@
+<!-- app/templates/dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Dashboard</title>
+</head>
+<body>
+  <h1>Candidate List</h1>
+  <ul>
+    {% for c in candidates %}
+      <li>{{ c.name }} ({{ c.email }}) - Stage: {{ c.stage }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Add Candidate</h2>
+  <form action="/add_candidate" method="post">
+    Name: <input type="text" name="name" required>
+    Email: <input type="email" name="email" required>
+    <button type="submit">Add</button>
+  </form>
+</body>
+</html>
