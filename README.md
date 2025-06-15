@@ -6,43 +6,47 @@ A Python application designed for managing sequential email campaigns for job ca
 
 🚀 Features
 
-Candidate Management: Add and track candidates with their details
-Sequential Email Campaigns: Send 3 automated emails per candidate with configurable delays
-Email Templates: Pre-built professional email templates for recruitment
-Queue System: Schedule and process emails automatically
-Email Logging: Track all sent emails with timestamps and status
-Dashboard: View statistics and campaign performance
-SMTP Integration: Send real emails or run in simulation mode
+- Candidate Management: Add and track candidates with their details.
+- Sequential Email Campaigns: Send 3 automated emails per candidate with configurable delays
+- Email Templates: Pre-built professional email templates for recruitment
+- Queue System: Schedule and process emails automatically
+- Email Logging: Track all sent emails with timestamps and status
+- Dashboard: View statistics and campaign performance
+- SMTP Integration: Send real emails or run in simulation mode
 
 🛠️ Setup
 For GitHub Codespaces
 
-Create a new repository with these files
-Open in Codespaces - everything will be automatically configured!
-Install dependencies:
-bashpip install -r requirements.txt
+1. Create a new repository with these files
+2. Open in Codespaces - everything will be automatically configured!
+3. Install dependencies:
 
-Configure email settings (optional):
-bashcp .env.example .env
-# Edit .env with your SMTP credentials
+   bash
+   pip install -r requirements.txt
 
-Run the application:
-bashpython candidate_email_manager.py
+4. Configure email settings (optional):
+''' bash
+cp .env.example .env 
+# Edit .env with your SMTP credentials'''
+
+5. Run the application:
+bash
+python candidate_email_manager.py
 
 
 Email Configuration
 The app works in two modes:
 1. Simulation Mode (Default)
 
-No SMTP configuration needed
-Emails are printed to console instead of being sent
-Perfect for testing and development
+- No SMTP configuration needed
+- Emails are printed to console instead of being sent
+- Perfect for testing and development
 
 2. Real Email Mode
 
-Configure SMTP settings in .env file
-Supports Gmail, Outlook, Yahoo, and custom SMTP servers
-For Gmail: Use App Passwords (not regular password)
+- Configure SMTP settings in .env file
+- Supports Gmail, Outlook, Yahoo, and custom SMTP servers
+- For Gmail: Use App Passwords (not regular password)
 
 📋 Usage
 1. Add Candidates
