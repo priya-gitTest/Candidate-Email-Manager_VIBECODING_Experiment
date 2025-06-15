@@ -3,6 +3,7 @@ Candidate Email Manager_VIBECODING_Experiment_CLAUDE
 ---
  Candidate Email Manager
 A Python application designed for managing sequential email campaigns for job candidates. Built with DuckDB for data persistence and perfect for running in GitHub Codespaces!
+
 🚀 Features
 
 Candidate Management: Add and track candidates with their details
